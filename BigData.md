@@ -113,7 +113,7 @@ arr.dtype  # Data type of the elements
 **4. Arithmetic Operations (Element-wise)**
 ```python
 arr1, arr2 = np.array([1, 2, 3]), np.array([4, 5, 6])
-arr1 + arr2
+arr1 + arr2 = [5, 7, 9]
 arr1 - arr2
 arr1 / arr2
 arr1 * arr2
@@ -185,6 +185,7 @@ sorted_arr = np.sort(arr)
   - `.iloc[]` - Purely integer-location based indexing for selection by position
 
 - **Concatenating:**
+```python
 df1 = pd.DataFrame({
     'A': ['A0', 'A1'],
     'B': ['B0', 'B1']
@@ -200,8 +201,10 @@ result = pd.concat([df1, df2])
 1  A1  B1
 0  A2  B2
 1  A3  B3
+```
 
 **Chunks**
+```python
 import pandas as pd
 
 chunker = pd.read_csv("examples/ex6.csv", chunksize=1000)
@@ -228,3 +231,4 @@ F    335.0
 K    334.0
 H    330.0
 dtype: float64
+```
