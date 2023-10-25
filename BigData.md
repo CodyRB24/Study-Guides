@@ -78,7 +78,6 @@
    ```
 
 **Python Basic Functions and Methods**
-- `str.split(separator)`: splits a string into a list where each word is a list item.
 - `str.count(substring)`: returns the number of occurrences of a substring in the given string.
 - `list.append(item)`: adds an item to the end of the list.
 - `len(sequence)`: Length  
@@ -134,9 +133,12 @@ np.argmin(arr)  # Returns the indices of the minimum values
 
 **6. Indexing and Slicing**
 ```python
-arr = np.array([1, 2, 3, 4, 5])
-arr[0]  # 1st Element
-arr[1:4]  # Subarray, 2nd to 4th element
+arr = np.array([0, 1, 2, 3, 4])
+arr[0]  # output: 0
+arr[1:4]  # output: [1 2 3]
+arr[2:] # output: [2 3 4]
+arr[:2] # output: [0 1]
+arr[-3] # output: 2
 ```
 
 **7. Reshaping and Transposing (Changing Dimensions)**
@@ -231,4 +233,11 @@ F    335.0
 K    334.0
 H    330.0
 dtype: float64
+```
+
+```python
+states = ['ohio', 'indiana', 'michigan', 'new york']
+print(list(map(lambda x: len(x), states)))
+
+[4 7 8 8]
 ```
